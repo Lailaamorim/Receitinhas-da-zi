@@ -1,40 +1,70 @@
-:root{
-    .alice-regular {
-        font-family: "Alice", serif;
-       line-height: 150%;
-       color: #573A37;
-      }
-      
+* {
+    margin: 0;  /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove preenchimentos padrão de todos os elementos */
+}
+
+:root {
+    /* Declaração de variáveis CSS para facilitar a manutenção e padronização de cores */
+    --primary-color: #573A37;     /* Cor principal para textos e elementos */
+    --background-color: #F0E8C2;  /* Cor de fundo principal */
+    --heading-color: #291B1A;     /* Cor específica para títulos e rodapé */
 }
 
 body {
-    background-image:url(assets/bg-image.jpg) ;
-    background-size: cover;
-} 
-
+    background-image: url(assets/bg-image.jpg); /* Define uma imagem de fundo */
+    background-size: cover;  /* Garante que a imagem cubra toda a área visível */
+    font-family: "Alice", serif; /* Define a fonte principal do site */
+    line-height: 1.5;  /* Aumenta o espaçamento entre linhas para melhor leitura */
+    color: var(--primary-color);  /* Aplica a cor principal ao texto */
+}
 
 #page {
-    box-sizing: border-box;
-    width: 800px;
-    padding: 24px;
-    background-color: #F0E8C2;
-    border-radius: 24px;
-    margin: 48px auto;
+    box-sizing: border-box;  /* Garante que padding e bordas não aumentem o tamanho total do elemento */
+    width: 800px;  /* Define uma largura fixa para a área principal */
+    padding: 24px;  /* Adiciona espaçamento interno */
+    background-color: var(--background-color); /* Cor de fundo utilizando a variável */
+    border-radius: 24px;  /* Arredonda os cantos do elemento */
+    margin: 48px auto 28px;  /* Centraliza o elemento na página */
 }
 
 img {
-    border-radius: 16px;
+    border-radius: 16px;  /* Arredonda as bordas das imagens */
 }
 
-h1{
-    line-height: 16px;
-    font-size: 140%;
+main {
+    padding: 24px;  /* Adiciona espaçamento interno ao elemento <main> */
 }
 
-h2{
-    font-size: 24px;
+section + section {
+    margin-top: 24px;  /* Adiciona espaçamento superior entre seções consecutivas */
+}
+
+#about p + p {
+    margin-top: 12px;  /* Adiciona espaço extra entre parágrafos consecutivos dentro da seção #about */
+}
+
+h1 {
+    line-height: 140%;  /* Define o espaçamento entre linhas do título principal */
+    font-size: 40px;  /* Define o tamanho do texto do título principal */
+    margin-bottom: 4px;  /* Adiciona espaço inferior ao título */
+    color: var(--heading-color);  /* Aplica a cor específica para títulos */
 }
 
 h1, h2 {
-    color: #291B1A;
+    color: #291B1A;  /* Define a cor padrão para os títulos h1 e h2 */
+    margin-bottom: 4px;  /* Adiciona espaço inferior aos títulos */
+    line-height: 150%;  /* Define espaçamento maior para melhorar a leitura */
+}
+
+ul {
+    padding-left: 24px;  /* Adiciona recuo padrão às listas */
+}
+
+footer {
+    color: #000;  /* Texto preto para maior contraste */
+    text-align: center;  /* Centraliza o texto do rodapé */
+    padding: 24px 0;  /* Ajusta o espaçamento interno no topo e na base */
+    width: 100%;  /* Garante que o rodapé ocupe toda a largura da tela */
+    position: relative;  /* Define o rodapé como elemento posicionado */
+    bottom: 0;  /* Coloca o rodapé na base da área visível */
 }
