@@ -13,7 +13,7 @@ Fique à vontade para explorar e, quem sabe, se aventurar na culinária também!
           src="./assets/img.png"></a>
 </p>
 
-[🔗CLIQUE AQUI PARA ACESSAR😍](https://lailaamorim.github.io/DISCOVER-Zi/)
+[🔗CLIQUE AQUI PARA ACESSAR😍](https://lailaamorim.github.io/Receitinhas-da-zi/)
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
